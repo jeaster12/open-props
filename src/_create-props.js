@@ -3,13 +3,11 @@ import fs from 'fs'
 import Animations from './props.animations.js'
 import Sizes from './props.sizes.js'
 import * as OpenColors from './props.colors.js'
+import BrandColors from './props.colors.brand.js'
 import Fonts from './props.fonts.js'
 import Borders from './props.borders.js'
-import Aspects from './props.aspects.js'
 import Easings from './props.easing.js'
-import Gradients from './props.gradients.js'
 import Shadows from './props.shadows.js'
-import SVG from './props.svg.js'
 import Zindex from './props.zindex.js'
 
 const [,,prefix,useWhere] = process.argv
@@ -21,10 +19,8 @@ const mainbundle = {
   'props.easing.css': Easings,
   'props.zindex.css': Zindex,
   'props.shadows.css': Shadows,
-  'props.aspects.css': Aspects,
   'props.colors.css': OpenColors.default,
-  // 'props.svg.css': SVG,
-  'props.gradients.css': Gradients,
+  'props.colors.brand.css': BrandColors,
   'props.animations.css': Animations,
   'props.borders.css': Borders,
 }
@@ -49,11 +45,10 @@ const jsonbundle = {
   ...Object.values(individual_colors).reduce((colors, color) => {
     return Object.assign(colors, color)
   }, {}),
+  ...BrandColors,
   ...Sizes,
   ...Easings,
   ...Zindex,
-  ...Aspects,
-  ...Gradients,
   ...Borders,
 }
 const designtokens = Object.entries(jsonbundle).map(([key, token]) => {
