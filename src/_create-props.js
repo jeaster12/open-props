@@ -25,26 +25,8 @@ const mainbundle = {
   'props.borders.css': Borders,
 }
 
-const individual_colors = {
-  'props.gray.css': OpenColors.Gray,
-  'props.red.css': OpenColors.Red,
-  'props.pink.css': OpenColors.Pink,
-  'props.grape.css': OpenColors.Grape,
-  'props.violet.css': OpenColors.Violet,
-  'props.indigo.css': OpenColors.Indigo,
-  'props.blue.css': OpenColors.Blue,
-  'props.cyan.css': OpenColors.Cyan,
-  'props.teal.css': OpenColors.Teal,
-  'props.green.css': OpenColors.Green,
-  'props.lime.css': OpenColors.Lime,
-  'props.yellow.css': OpenColors.Yellow,
-  'props.orange.css': OpenColors.Orange,
-}
-
 const jsonbundle = {
-  ...Object.values(individual_colors).reduce((colors, color) => {
-    return Object.assign(colors, color)
-  }, {}),
+  ...OpenColors,
   ...BrandColors,
   ...Sizes,
   ...Easings,
@@ -57,7 +39,7 @@ const designtokens = Object.entries(jsonbundle).map(([key, token]) => {
   }]
 })
 
-const JSONtokens = fs.createWriteStream('../open-props.tokens.json')
+const JSONtokens = fs.createWriteStream('../cc-props.tokens.json')
 JSONtokens.end(JSON.stringify(Object.fromEntries(designtokens), null, 2))
 
 const buildPropsStylesheet = ({filename, props}) => {
@@ -93,7 +75,7 @@ const buildPropsStylesheet = ({filename, props}) => {
 }
 
 // gen prop variants
-Object.entries({...mainbundle, ...individual_colors}).forEach(([filename, props]) => {
+Object.entries({...mainbundle}).forEach(([filename, props]) => {
   buildPropsStylesheet({filename, props})
 })
 

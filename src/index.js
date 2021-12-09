@@ -8,7 +8,7 @@ import Easings from './props.easing.js'
 import Shadows from './props.shadows.js'
 import Zindex from './props.zindex.js'
 
-export default OpenProps = {
+export default CCProps = {
   ...Animations,
   ...Sizes,
   ...Colors,
