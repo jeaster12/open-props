@@ -345,6 +345,9 @@
   "--primary-9": {
     "value": "var(--blue-9)"
   },
+  "--primary": {
+    "value": "var(--primary-8)"
+  },
   "--success-0": {
     "value": "var(--green-0)"
   },
@@ -374,6 +377,9 @@
   },
   "--success-9": {
     "value": "var(--green-9)"
+  },
+  "--success": {
+    "value": "var(--success-8)"
   },
   "--warning-0": {
     "value": "var(--yellow-0)"
@@ -405,6 +411,9 @@
   "--warning-9": {
     "value": "var(--yellow-9)"
   },
+  "--warning": {
+    "value": "var(--warning-8)"
+  },
   "--danger-0": {
     "value": "var(--red-0)"
   },
@@ -434,6 +443,9 @@
   },
   "--danger-9": {
     "value": "var(--red-9)"
+  },
+  "--danger": {
+    "value": "var(--danger-8)"
   },
   "--global-px-grid": {
     "value": "8px"

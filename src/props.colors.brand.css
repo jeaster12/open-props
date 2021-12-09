@@ -9,6 +9,7 @@
   --primary-7: var(--blue-7);
   --primary-8: var(--blue-8);
   --primary-9: var(--blue-9);
+  --primary: var(--primary-8);
   --success-0: var(--green-0);
   --success-1: var(--green-1);
   --success-2: var(--green-2);
@@ -19,6 +20,7 @@
   --success-7: var(--green-7);
   --success-8: var(--green-8);
   --success-9: var(--green-9);
+  --success: var(--success-8);
   --warning-0: var(--yellow-0);
   --warning-1: var(--yellow-1);
   --warning-2: var(--yellow-2);
@@ -29,6 +31,7 @@
   --warning-7: var(--yellow-7);
   --warning-8: var(--yellow-8);
   --warning-9: var(--yellow-9);
+  --warning: var(--warning-8);
   --danger-0: var(--red-0);
   --danger-1: var(--red-1);
   --danger-2: var(--red-2);
@@ -39,4 +42,5 @@
   --danger-7: var(--red-7);
   --danger-8: var(--red-8);
   --danger-9: var(--red-9);
+  --danger: var(--danger-8);
 }

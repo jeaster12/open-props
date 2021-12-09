@@ -1,25 +1,10 @@
-<div align="center">
-  
-![Frame 2](https://user-images.githubusercontent.com/1134620/141246730-7df4cf2a-6249-42ca-a01b-494c3ccddabe.png)
-
-## Open Source CSS Variables
-`gradients` `animations` `sizes` `easings` `colors` `shadows` `aspect-ratios` `z-indexes`  
-
-[![Tests](https://github.com/argyleink/open-props/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/argyleink/open-props/actions/workflows/tests.yml)
-  
-<br>
-
-### Need help? &nbsp; 👉 &nbsp; [Discord](https://discord.gg/AqA4fU886r) 
-  
-</div>
-
-<br>
 
 #### CDN
-- [https://unpkg.com/open-props](https://unpkg.com/open-props)
-- [https://unpkg.com/open-props/normalize.min.css](https://unpkg.com/open-props/normalize.min.css) - Normalize (light + dark)
-- [https://unpkg.com/open-props/open-props.tokens.json](https://unpkg.com/open-props/open-props.tokens.json) - Design Tokens
-- [https://unpkg.com/browse/open-props@latest/](https://unpkg.com/browse/open-props@latest/) - Full CDN list
+- [https://unpkg.com/@cupcake-ds/cc-props/](https://unpkg.com/@cupcake-ds/cc-props/)
+- [https://unpkg.com/@cupcake-ds/cc-props/cc-props.min.css](https://unpkg.com/@cupcake-ds/cc-props/cc-props.min.css)
+- [https://unpkg.com/@cupcake-ds/cc-props/normalize.min.css](https://unpkg.com/@cupcake-ds/cc-props/normalize.min.css) - Normalize (light + dark)
+- [https://unpkg.com/@cupcake-ds/cc-props/cc-props.tokens.json](https://unpkg.com/@cupcake-ds/cc-props/cc-props.tokens.json) - Design Tokens
+- [https://unpkg.com/browse/@cupcake-ds/cc-props@latest/](https://unpkg.com/browse/@cupcake-ds/cc-props@latest/) - Full CDN list
 
 #### CLI
 - `npm run gen:op` - runs through `src/` js files and creates the PostCSS files in `src/`

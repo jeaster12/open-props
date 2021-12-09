@@ -9,6 +9,7 @@ export const Primary = {
   '--primary-7': 'var(--blue-7)',
   '--primary-8': 'var(--blue-8)',
   '--primary-9': 'var(--blue-9)',
+  '--primary': 'var(--primary-8)',
 }
 
 export const Success = {
@@ -22,6 +23,7 @@ export const Success = {
   '--success-7': 'var(--green-7)',
   '--success-8': 'var(--green-8)',
   '--success-9': 'var(--green-9)',
+  '--success': 'var(--success-8)',
 }
 
 export const Warning = {
@@ -35,6 +37,7 @@ export const Warning = {
   '--warning-7': 'var(--yellow-7)',
   '--warning-8': 'var(--yellow-8)',
   '--warning-9': 'var(--yellow-9)',
+  '--warning': 'var(--warning-8)',
 }
 
 export const Danger = {
@@ -48,6 +51,7 @@ export const Danger = {
   '--danger-7': 'var(--red-7)',
   '--danger-8': 'var(--red-8)',
   '--danger-9': 'var(--red-9)',
+  '--danger': 'var(--danger-8)',
 }
 
 
