@@ -1,10 +1,9 @@
 @import 'props.media.css';
+@import 'props.global.css';
 @import 'props.fonts.css';
 @import 'props.sizes.css';
-@import 'props.easing.css';
 @import 'props.zindex.css';
 @import 'props.shadows.css';
 @import 'props.colors.css';
 @import 'props.colors.brand.css';
-@import 'props.animations.css';
 @import 'props.borders.css';

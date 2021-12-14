@@ -1,12 +1,11 @@
 import fs from 'fs'
 
-import Animations from './props.animations.js'
+import Global from './props.global.js'
 import Sizes from './props.sizes.js'
 import * as OpenColors from './props.colors.js'
 import BrandColors from './props.colors.brand.js'
 import Fonts from './props.fonts.js'
 import Borders from './props.borders.js'
-import Easings from './props.easing.js'
 import Shadows from './props.shadows.js'
 import Zindex from './props.zindex.js'
 
@@ -14,22 +13,21 @@ const [,,prefix,useWhere] = process.argv
 const selector = useWhere === 'true' ? ':where(html)' : 'html'
 
 const mainbundle = {
+  'props.global.css': Global,
   'props.fonts.css': Fonts,
   'props.sizes.css': Sizes,
-  'props.easing.css': Easings,
   'props.zindex.css': Zindex,
   'props.shadows.css': Shadows,
   'props.colors.css': OpenColors.default,
   'props.colors.brand.css': BrandColors,
-  'props.animations.css': Animations,
   'props.borders.css': Borders,
 }
 
 const jsonbundle = {
+  ...Global,
   ...OpenColors,
   ...BrandColors,
   ...Sizes,
-  ...Easings,
   ...Zindex,
   ...Borders,
 }
