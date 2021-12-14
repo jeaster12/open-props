@@ -2,7 +2,7 @@
   "type": "module",
   "name": "@cupcake-ds/cc-props",
   "license": "MIT",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/jeaster12/open-props"
